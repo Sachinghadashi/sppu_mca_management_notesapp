@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MCA Notes — Welcome</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">MCA Notes</h1>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#welcome" class="nav-link">Welcome</a>
+        <a href="#sem1" class="nav-link">Sem 1</a>
+        <a href="#sem2" class="nav-link">Sem 2</a>
+        <a href="#sem3" class="nav-link">Sem 3</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="welcome" class="hero container">
+      <h2>Welcome to MCA Notes</h2>
+      <p>Open and download semester-wise notes (PDF). Click a note to preview or press download to save it locally.</p>
+    </section>
+
+    <section id="sem1" class="notes-section container">
+      <div class="section-head">
+        <h3>Semester 1</h3>
+        <input type="search" id="search-sem1" placeholder="Search Sem 1 notes..." aria-label="Search Semester 1 notes" />
+      </div>
+      <div id="sem1-list" class="notes-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="sem2" class="notes-section container">
+      <div class="section-head">
+        <h3>Semester 2</h3>
+        <input type="search" id="search-sem2" placeholder="Search Sem 2 notes..." aria-label="Search Semester 2 notes" />
+      </div>
+      <div id="sem2-list" class="notes-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="sem3" class="notes-section container">
+      <div class="section-head">
+        <h3>Semester 3</h3>
+        <input type="search" id="search-sem3" placeholder="Search Sem 3 notes..." aria-label="Search Semester 3 notes" />
+      </div>
+      <div id="sem3-list" class="notes-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> MCA Notes • Built by SPG</small>
+    </div>
+  </footer>
+
+  <!-- PDF preview modal -->
+  <div id="pdf-modal" class="modal" aria-hidden="true" role="dialog" aria-label="PDF preview">
+    <div class="modal-content">
+      <button id="modal-close" class="btn close-btn" aria-label="Close preview">✕</button>
+      <div class="modal-body">
+        <iframe id="pdf-frame" src="" title="PDF preview" frameborder="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <a id="modal-download" class="btn" target="_blank" rel="noopener">Open in new tab / Download</a>
+      </div>
+    </div>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
