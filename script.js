@@ -5,13 +5,13 @@
 
 const notesData = {
   sem1: [
-    { title: "dbms", file: "dbms_notes.pdf", desc: "Basics of C and program structure." }
+    { title: "Fundamentals of Data science", file: "Fundamentals _of_Data_Science.pdf", desc: "Basics of C and program structure." }
   ],
   sem2: [
     { title: "dsa", file: "dsa_notes.pdf", desc: "Arrays, linked lists, trees." }
   ],
   sem3: [
-    { title: "Data science", file: "data_science_notes.pdf", desc: "Processes, scheduling, memory." }
+       { title: "OB", file: "data_science_notes.pdf", desc: "Processes, scheduling, memory." }
   ]
 };
 
@@ -112,3 +112,4 @@ function escapeHtml(str) {
     return ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" })[m];
   });
 }
+
